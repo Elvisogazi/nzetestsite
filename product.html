@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product | PickWise</title>
+  <meta name="description" content="Product details and where to buy.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="product">
+
+  <!-- HEADER / NAVIGATION -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html" aria-label="PickWise home">
+        <span class="logo-mark">P</span>
+        <span>PickWise</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="site-nav">☰</button>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="site-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="index.html#products">Products</a></li>
+          <li><a href="index.html#categories">Categories</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / <a href="index.html#products">Products</a>
+      </div>
+
+      <!-- Filled in by script.js using the ?id= value in the URL -->
+      <div class="product-detail" id="product-detail">
+        <p>Loading product…</p>
+      </div>
+    </div>
+
+    <!-- LEAD CAPTURE FORM (filled in by script.js; Tally embed or demo form) -->
+    <section class="section section-soft" id="lead-section" hidden>
+      <div class="container">
+        <div class="lead-card" id="lead-card"></div>
+      </div>
+    </section>
+
+    <!-- RELATED PRODUCTS -->
+    <section class="section section-soft" id="related-section" hidden>
+      <div class="container">
+        <div class="section-head">
+          <h2>You might also like</h2>
+        </div>
+        <div class="product-grid" id="related-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <a class="logo" href="index.html"><span class="logo-mark">P</span><span>PickWise</span></a>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#products">Products</a></li>
+          <li><a href="index.html#categories">Categories</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="about.html#disclosure">Affiliate Disclosure</a></li>
+        </ul>
+      </div>
+      <p class="footer-disclosure">
+        <strong>Affiliate Disclosure:</strong> PickWise may earn a commission from qualifying purchases made through links on this site, at no extra cost to you.
+      </p>
+      <p class="copyright">&copy; <span id="year">2026</span> PickWise. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="config.js"></script>
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
